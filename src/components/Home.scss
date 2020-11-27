@@ -1,0 +1,15 @@
+.home {
+  .home__container {
+    .home__container__ad {
+      opacity: 1.1;
+      width: 100%;
+      z-index: -1;
+      margin-bottom: -150px;
+      -webkit-mask-image: linear-gradient(
+        to bottom,
+        rgb(0, 0, 0),
+        rgba(0, 0, 0, 0.123)
+      );
+    }
+  }
+}
