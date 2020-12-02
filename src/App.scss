@@ -4,3 +4,15 @@ $fontDefault: "Roboto", sans-serif;
   padding: 0;
   font-family: $fontDefault;
 }
+
+button {
+  cursor: pointer;
+}
+
+span, a {
+  text-decoration: none !important;
+}
+
+body {
+  background-color: rgb(234, 237, 237);
+}

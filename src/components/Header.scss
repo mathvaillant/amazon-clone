@@ -1,63 +1,134 @@
 .header {
-  height: 60px;
   display: flex;
-  align-items: center;
-  background-color: #131921;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-
-  .header__logo {
-    width: 100px;
-    object-fit: contain;
-    margin: 0 20px;
-    margin-top: 18px;
-  }
-  .header__search {
+  flex-direction: column;
+  .header1 {
+    height: 60px;
     display: flex;
-    flex: 1;
     align-items: center;
-    border-radius: 24px;
-    .header__searchInput {
-      height: 12px;
-      padding: 10px;
-      border: none;
-      width: 100%;
-    }
-    .header__searchIcon {
-      padding: 5px;
-      height: 22px !important;
-      background-color: #cd9042;
-    }
-  }
-  .header__nav {
-    display: flex;
-    justify-content: space-evenly;
-    .header__option {
+    background-color: #131921;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  
+    .header1__deliver {
       display: flex;
-      flex-direction: column;
-      margin-left: 10px;
-      margin-right: 10px;
-      color: white;
-      .header__optionLineOne {
-        font-size: 10px;
+      margin-right: 1rem;
+      .header1__deliver__icon {
+        display: flex;
+        align-items: flex-end;
+        .icon {
+          color: #fff;
+          margin-bottom: 2.5px;
+        }
       }
-      .header__optionLineTwo {
-        font-size: 13px;
-        font-weight: 800;
+      .header1__deliver__location {
+        margin-right: 2px;
+        p {
+          font-weight: 200;
+          font-size: smaller;
+        }
+        strong {
+          font-weight: 700;
+          font-size: smaller;
+        }
+        p, strong {
+          color: #fff;
+        }
       }
     }
-    .header__optionBasket {
+  
+    .header1__logo {
+      width: 95px;
+      object-fit: contain;
+      margin: 0 20px;
+      margin-top: 18px;
+    }
+    .header1__search {
       display: flex;
+      flex: 1;
       align-items: center;
-      color: #fff;
-      .header__optionLineTwo {
-        font-size: 13px;
-        font-weight: 800;
+      border-radius: 24px;
+      .header1__searchInput {
+        height: 20px;
+        padding: 10px;
+        border: none;
+        width: 100%;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        &:focus {
+          outline: none;
+          border-color: #f0950e !important;
+          border: solid 3px;
+          border-top-right-radius: 8px;
+          border-bottom-right-radius: 8px;
+          border-top-left-radius: 8px;
+          border-bottom-left-radius: 8px;
+        }
       }
-      .header__basketCount {
+      .header1__searchIcon {
+        padding: 5px;
+        height: 30px !important;
+        width: 34px !important;
+        background-color: #cd9042;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        cursor: pointer;
+      }
+    }
+    .header1__nav {
+      display: flex;
+      justify-content: space-evenly;
+      .header1__option {
+        display: flex;
+        flex-direction: column;
         margin-left: 10px;
         margin-right: 10px;
+        color: white;
+        .header1__optionLineOne {
+          font-size: 10px;
+        }
+        .header1__optionLineTwo {
+          font-size: 13px;
+          font-weight: 800;
+        }
+      }
+      .header1__optionBasket {
+        display: flex;
+        align-items: center;
+        color: #fff;
+        .header1__optionLineTwo {
+          font-size: 13px;
+          font-weight: 800;
+        }
+        .header1__basketCount {
+          margin-left: 10px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  .header2 {
+    background-color: #232F3E;
+    height: 40px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    ul {
+      display: flex;
+      align-items: center;
+      width: 95%;
+      li  {
+        color: #fff;
+        font-size: 15px;
+        font-weight: 400;
+        list-style: none;
+        margin: 0 1rem;
+      }
+      .header2__covid-19 {
+        margin-left: auto;
+        font-weight: 600;
       }
     }
   }
